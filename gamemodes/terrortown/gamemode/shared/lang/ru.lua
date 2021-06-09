@@ -1064,7 +1064,7 @@ L.submenu_gameplay_general_title = "Общее"
 L.submenu_gameplay_avoidroles_title = "Выбор избегаемых ролей"
 
 L.submenu_administration_hud_title = "Настройки интерфейса"
-L.submenu_administration_random_shop = "Случайный магазин"
+L.submenu_administration_randomshop_title = "Случайный магазин"
 
 L.help_color_desc = "Если эта настройка включена, вы можете выбрать глобальный цвет, который будет использоваться для прицела и контура информации о цели."
 L.help_scale_factor = "Этот множитель размера влияет на все элементы пользовательского интерфейса (интерфейс, индикаторы и информацию о цели). Он автоматически обновляется при изменении разрешения экрана. Изменение этого множителя сбросит настройки интерфейса!"
@@ -1302,7 +1302,7 @@ L.help_lang_info = [[
 --L.desc_event_spawn = "{player} has spawned."
 
 -- Name of a trap that killed us that has not been named by the mapper
-L.something = "что-то"
+L.trap_something = "что-то"
 
 -- Kill events
 --L.desc_event_kill_suicide = "It was suicide."
@@ -1316,36 +1316,36 @@ L.desc_event_kill_sui = "{victim} ({vrole} / {vteam}) не выдерживае�
 L.desc_event_kill_sui_using = "{victim} ({vrole} / {vteam}) совершает самоубийство при помощи {tool}."
 
 L.desc_event_kill_fall = "{victim} ({vrole} / {vteam}) разбивается насмерть."
-L.desc_event_kill_fall_pushed = "{victim} ({vrole} / {vteam}) разбивается насмерть после толчка от {attacker} ({arole} / {ateam})."
+L.desc_event_kill_fall_pushed = "{victim} ({vrole} / {vteam}) разбивается насмерть после толчка от {attacker}."
 L.desc_event_kill_fall_pushed_using = "{victim} ({vrole} / {vteam}) разбивается насмерть после толчка от {trap}, активированной {attacker} ({arole} / {ateam})."
 
-L.desc_event_kill_shot = "{victim} ({vrole} / {vteam}) был застрелен {attacker} ({arole} / {ateam})."
+L.desc_event_kill_shot = "{victim} ({vrole} / {vteam}) был застрелен {attacker}."
 L.desc_event_kill_shot_using = "{victim} ({vrole} / {vteam}) был застрелен {attacker} ({arole} / {ateam}) с помощью {weapon}."
 
-L.desc_event_kill_drown = "{victim} ({vrole} / {vteam}) был утоплен {attacker} ({arole} / {ateam})."
+L.desc_event_kill_drown = "{victim} ({vrole} / {vteam}) был утоплен {attacker}."
 L.desc_event_kill_drown_using = "{victim} ({vrole} / {vteam}) был утоплен {trap}, активированной {attacker} ({arole} / {ateam})."
 
-L.desc_event_kill_boom = "{victim} ({vrole} / {vteam}) был взорван {attacker} ({arole} / {ateam})."
+L.desc_event_kill_boom = "{victim} ({vrole} / {vteam}) был взорван {attacker}."
 L.desc_event_kill_boom_using = "{victim} ({vrole} / {vteam}) был взорван {attacker} ({arole} / {ateam}) при помощи {trap}."
 
-L.desc_event_kill_burn = "{victim} ({vrole} / {vteam}) был сожжён {attacker} ({arole} / {ateam})."
+L.desc_event_kill_burn = "{victim} ({vrole} / {vteam}) был сожжён {attacker}."
 L.desc_event_kill_burn_using = "{victim} ({vrole} / {vteam}) был сожжён {trap} из-за {attacker} ({arole} / {ateam})."
 
-L.desc_event_kill_club = "{victim} ({vrole} / {vteam}) был избит {attacker} ({arole} / {ateam})."
+L.desc_event_kill_club = "{victim} ({vrole} / {vteam}) был избит {attacker}."
 L.desc_event_kill_club_using = "{{victim} ({vrole} / {vteam}) был избит {attacker} ({arole} / {ateam}) при помощи {trap}"
 
-L.desc_event_kill_slash = "{victim} ({vrole} / {vteam}) был зарезан {attacker} ({arole} / {ateam})."
+L.desc_event_kill_slash = "{victim} ({vrole} / {vteam}) был зарезан {attacker}."
 L.desc_event_kill_slash_using = "{victim} ({vrole} / {vteam}) был зарезан {attacker} ({arole} / {ateam}) при помощи {trap}."
 
-L.desc_event_kill_tele = "{victim} ({vrole} / {vteam}) был убит телепортацией {attacker} ({arole} / {ateam})."
+L.desc_event_kill_tele = "{victim} ({vrole} / {vteam}) был убит телепортацией {attacker}."
 L.desc_event_kill_tele_using = "{victim} ({vrole} / {vteam}) был распылён {trap}, установленной {attacker} ({arole} / {ateam})."
 
 L.desc_event_kill_goomba = "{victim} ({vrole} / {vteam}) был раздавлен большой массой {attacker} ({arole} / {ateam})."
 
-L.desc_event_kill_crush = "{victim} ({vrole} / {vteam}) был раздавлен {attacker} ({arole} / {ateam})."
+L.desc_event_kill_crush = "{victim} ({vrole} / {vteam}) был раздавлен {attacker}."
 L.desc_event_kill_crush_using = "{victim} ({vrole} / {vteam}) был раздавлен {attacker} ({arole} / {ateam}) при помощи {trap}."
 
-L.desc_event_kill_other = "{victim} ({vrole} / {vteam}) был убит {attacker} ({arole} / {ateam})."
+L.desc_event_kill_other = "{victim} ({vrole} / {vteam}) был убит {attacker}."
 L.desc_event_kill_other_using = "{victim} ({vrole} / {vteam}) был убит {attacker} ({arole} / {ateam}) при помощи {trap}."
 
 -- 2021-04-20
@@ -1359,3 +1359,18 @@ L.desc_event_kill_other_using = "{victim} ({vrole} / {vteam}) был убит {a
 --L.karma_cleanround_tooltip = "Clean round"
 --L.karma_roundheal_tooltip = "Roundheal"
 --L.karma_unknown_tooltip = "Unknown"
+
+-- 2021-05-07
+--L.header_random_shop_administration = "Setup Random Shop"
+--L.header_random_shop_value_administration = "Balance Settings"
+
+--L.shopeditor_name_random_shops = "Enable random shops"
+--L.shopeditor_desc_random_shops = [[Random shops give every player only a limited randomized set of all available equipments.
+--Team shops force all players in one team to have the same set instead of individual ones.
+--Rerolling allows you to get a new randomized set of equipment for credits.]]
+--L.shopeditor_name_random_shop_items = "Number of random equipments"
+--L.shopeditor_desc_random_shop_items = "This includes equipments, which are marked with .noRandom. So choose a high enough number or you only get those."
+--L.shopeditor_name_random_team_shops = "Enable team shops"
+--L.shopeditor_name_random_shop_reroll = "Enable shop reroll availability"
+--L.shopeditor_name_random_shop_reroll_cost = "Cost per reroll"
+--L.shopeditor_name_random_shop_reroll_per_buy = "Auto reroll after buy"

@@ -1065,7 +1065,7 @@ L.submenu_gameplay_general_title = "Général"
 L.submenu_gameplay_avoidroles_title = "Blacklistage de rôle"
 
 L.submenu_administration_hud_title = "Paramètres HUD"
-L.submenu_administration_random_shop = "Shop Aléatoire"
+L.submenu_administration_randomshop_title = "Shop Aléatoire"
 
 L.help_color_desc = "Si ce paramètre est activé, il est possible de choisir une couleur qui sera utilisée pour le contour du targetID et du réticule."
 L.help_scale_factor = "L'échelle influence tous les éléments de l'UI (HUD, vgui et targetID). Il est automatiquement mis à jour si la résolution de l'écran est modifiée. La modification de cette valeur entraîne la réinitialisation du HUD!"
@@ -1303,7 +1303,7 @@ L.desc_event_selected = "Les teams et les rôles ont été distribuer pour les {
 L.desc_event_spawn = "{player} est apparu."
 
 -- Name of a trap that killed us that has not been named by the mapper
-L.something = "quelque chose"
+L.trap_something = "quelque chose"
 
 -- Kill events
 L.desc_event_kill_suicide = "C'était un suicide."
@@ -1317,36 +1317,36 @@ L.desc_event_kill_sui = "{victim} ({vrole} / {vteam}) n'en pouvait plus et s'est
 L.desc_event_kill_sui_using = "{victim} ({vrole} / {vteam}) s'est tué avec un(e) {tool}."
 
 L.desc_event_kill_fall = "{victim} ({vrole} / {vteam}) a fait une chute mortelle."
-L.desc_event_kill_fall_pushed = "{victim} ({vrole} / {vteam}) a fait une chute mortelle après que {attacker} ({arole} / {ateam}) l'est poussé."
+L.desc_event_kill_fall_pushed = "{victim} ({vrole} / {vteam}) a fait une chute mortelle après que {attacker} l'est poussé."
 L.desc_event_kill_fall_pushed_using = "{victim} ({vrole} / {vteam}) a fait une chute mortelle après que {attacker} ({arole} / {ateam}) est utilisé un {trap} pour le pousser."
 
-L.desc_event_kill_shot = "{victim} ({vrole} / {vteam}) s'est fait tirer dessus par {attacker} ({arole} / {ateam})."
+L.desc_event_kill_shot = "{victim} ({vrole} / {vteam}) s'est fait tirer dessus par {attacker}."
 L.desc_event_kill_shot_using = "{victim} ({vrole} / {vteam}) s'est fait tirer dessus par {attacker} ({arole} / {ateam}) avec un {weapon}."
 
-L.desc_event_kill_drown = "{victim} ({vrole} / {vteam}) s'est noyé à cause de {attacker} ({arole} / {ateam})."
+L.desc_event_kill_drown = "{victim} ({vrole} / {vteam}) s'est noyé à cause de {attacker}."
 L.desc_event_kill_drown_using = "{victim} ({vrole} / {vteam}) s'est noyé à cause de {trap} activé par {attacker} ({arole} / {ateam})."
 
-L.desc_event_kill_boom = "{victim} ({vrole} / {vteam}) est mort d'une explosion causée par {attacker} ({arole} / {ateam})."
+L.desc_event_kill_boom = "{victim} ({vrole} / {vteam}) est mort d'une explosion causée par {attacker}."
 L.desc_event_kill_boom_using = "{victim} ({vrole} / {vteam}) est mort d'une explosion causée par {attacker} ({arole} / {ateam}) avec {trap}."
 
-L.desc_event_kill_burn = "{victim} ({vrole} / {vteam}) s'est fait griller par {attacker} ({arole} / {ateam})."
+L.desc_event_kill_burn = "{victim} ({vrole} / {vteam}) s'est fait griller par {attacker}."
 L.desc_event_kill_burn_using = "{victim} ({vrole} / {vteam}) a brûlé de {trap} à cause de {attacker} ({arole} / {ateam})."
 
-L.desc_event_kill_club = "{victim} ({vrole} / {vteam}) a été battu par {attacker} ({arole} / {ateam})."
+L.desc_event_kill_club = "{victim} ({vrole} / {vteam}) a été battu par {attacker}."
 L.desc_event_kill_club_using = "{victim} ({vrole} / {vteam}) a été roué de coups {attacker} ({arole} / {ateam}) avec {trap}."
 
-L.desc_event_kill_slash = "{victim} ({vrole} / {vteam}) a été poignardé par {attacker} ({arole} / {ateam})."
+L.desc_event_kill_slash = "{victim} ({vrole} / {vteam}) a été poignardé par {attacker}."
 L.desc_event_kill_slash_using = "{victim} ({vrole} / {vteam}) s'est fait coupé par {attacker} ({arole} / {ateam}) avec {trap}."
 
-L.desc_event_kill_tele = "{victim} ({vrole} / {vteam}) s'est fait téléfrag par {attacker} ({arole} / {ateam})."
+L.desc_event_kill_tele = "{victim} ({vrole} / {vteam}) s'est fait téléfrag par {attacker}."
 L.desc_event_kill_tele_using = "{victim} ({vrole} / {vteam}) s'est fait atomiser par {attacker} ({arole} / {ateam}) en utilisant {trap}."
 
 L.desc_event_kill_goomba = "{victim} ({vrole} / {vteam}) s'est fait écrasé par la masse imposante de {attacker} ({arole} / {ateam})."
 
-L.desc_event_kill_crush = "{victim} ({vrole} / {vteam}) s'est fait broyer par {attacker} ({arole} / {ateam})."
+L.desc_event_kill_crush = "{victim} ({vrole} / {vteam}) s'est fait broyer par {attacker}."
 L.desc_event_kill_crush_using = "{victim} ({vrole} / {vteam}) s'est fait broyer par {attacker} ({arole} / {ateam}) avec {trap}."
 
-L.desc_event_kill_other = "{victim} ({vrole} / {vteam}) est mort à cause de {attacker} ({arole} / {ateam})."
+L.desc_event_kill_other = "{victim} ({vrole} / {vteam}) est mort à cause de {attacker}."
 L.desc_event_kill_other_using = "{victim} ({vrole} / {vteam}) est mort à cause de {attacker} ({arole} / {ateam}) avec {trap}."
 
 -- 2021-04-20
@@ -1360,3 +1360,18 @@ L.karma_enemyhurt_tooltip = "Dégât infligé"
 L.karma_cleanround_tooltip = "Round parfait"
 L.karma_roundheal_tooltip = "Régénération de karma"
 L.karma_unknown_tooltip = "Inconnu"
+
+-- 2021-05-07
+--L.header_random_shop_administration = "Setup Random Shop"
+--L.header_random_shop_value_administration = "Balance Settings"
+
+--L.shopeditor_name_random_shops = "Enable random shops"
+--L.shopeditor_desc_random_shops = [[Random shops give every player only a limited randomized set of all available equipments.
+--Team shops force all players in one team to have the same set instead of individual ones.
+--Rerolling allows you to get a new randomized set of equipment for credits.]]
+--L.shopeditor_name_random_shop_items = "Number of random equipments"
+--L.shopeditor_desc_random_shop_items = "This includes equipments, which are marked with .noRandom. So choose a high enough number or you only get those."
+--L.shopeditor_name_random_team_shops = "Enable team shops"
+--L.shopeditor_name_random_shop_reroll = "Enable shop reroll availability"
+--L.shopeditor_name_random_shop_reroll_cost = "Cost per reroll"
+--L.shopeditor_name_random_shop_reroll_per_buy = "Auto reroll after buy"

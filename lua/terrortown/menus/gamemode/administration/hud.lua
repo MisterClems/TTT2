@@ -1,6 +1,11 @@
-local materialIcon = Material("vgui/ttt/vskin/helpscreen/administration")
+--- @ignore
 
-local function PopulateHUDPanel(parent)
+CLGAMEMODESUBMENU.base = "base_gamemodesubmenu"
+
+CLGAMEMODESUBMENU.priority = 100
+CLGAMEMODESUBMENU.title = "submenu_administration_hud_title"
+
+function CLGAMEMODESUBMENU:Populate(parent)
 	local form = vgui.CreateTTT2Form(parent, "header_hud_administration")
 
 	local restrictedHUDs = ttt2net.GetGlobal({"hud_manager", "restrictedHUDs"})
@@ -69,35 +74,9 @@ local function PopulateHUDPanel(parent)
 end
 
 ttt2net.OnUpdateGlobal({"hud_manager", "restrictedHUDs"}, function()
-	if HELPSCRN:GetOpenMenu() ~= "ttt2_administration_hud" then return end
+	if HELPSCRN:GetOpenMenu() ~= "administration_hud" then return end
 
 	-- rebuild the content area so that data is refreshed
 	-- based on the newly restricted HUDs
 	vguihandler.Rebuild()
 end)
-
-local function PopulateRandomShopPanel(parent)
-
-end
-
-HELPSCRN.populate["ttt2_administration"] = function(helpData, id)
-	local administrationData = helpData:RegisterSubMenu(id)
-
-	administrationData:SetTitle("menu_administration_title")
-	administrationData:SetDescription("menu_administration_description")
-	administrationData:SetIcon(materialIcon)
-
-	administrationData:AdminOnly(true)
-end
-
-HELPSCRN.subPopulate["ttt2_administration"] = function(helpData, id)
-	local hudData = helpData:PopulateSubMenu(id .. "_hud")
-
-	hudData:SetTitle("submenu_administration_hud_title")
-	hudData:PopulatePanel(PopulateHUDPanel)
-
-	local shopData = helpData:PopulateSubMenu(id .. "_random_shop")
-
-	shopData:SetTitle("submenu_administration_random_shop")
-	shopData:PopulatePanel(PopulateRandomShopPanel)
-end
