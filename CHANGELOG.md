@@ -17,6 +17,7 @@ All notable changes to TTT2 will be documented here. Inspired by [keep a changel
 - Karma now stores changes
   - Is shown in roundend menu
 - Added the ConVar `ttt2_random_shop_items` for the number of items in the randomshop
+- Added per-player voice control by hovering over the mute icon and scrolling
 
 ### Fixed
 
@@ -30,6 +31,7 @@ All notable changes to TTT2 will be documented here. Inspired by [keep a changel
 - Fixed issue where roles with unknownTeam could see messages sent with the team chat key
 - Fixed the admin section label not being visible in the main menu
 - Fixed the auto resizing of the buttons based on the availability of a scrollbar not working
+- Fixed reopening submenus of the legacy addons in F1 menu not working
 
 ### Changed
 
@@ -45,11 +47,21 @@ All notable changes to TTT2 will be documented here. Inspired by [keep a changel
   - menus are now generated based on files located in `lua/terrortown/menus/gamemode/`
   - submenus are generated from files located in folders with the menu name
 - Menus without content are now always hidden in the main menu
+- Moved Custom Shopeditor and linking shop to roles to the F1 menu
+- Moved inclusion of cl_help to the bottom as nothing depends on it, but menus created by it could depend on other client files
+- Shopeditor equipment is now available in F1 menu
+- Moved the role layering menu to the F1 menu (administration submenu)
+  - removed the command `ttt2_edit_rolelayering`
+
+### Removed
+
+- Removed the custom loading screen (GMOD now only accepts http(s) URLs for sv_loadingurl)
 
 ### Breaking Changes
 
 - Adjusted `Player:HasRole()` and `Player:HasTeam()` to support simplified role and team checks (no parameter are supported anymore, use `Player:GetRole()` or `Player:GetTeam()` instead)
 - Moved global roleData to the `roles` library (e.g. `INNOCENT` to `roles.INNOCENT`). `INNOCENT`, `TRAITOR` etc. is not supported anymore. `ROLE_<ROLENAME>` is still supported and won't be changed.
+- Shopeditor function `ShopEditor.ReadItemData()` now only updates a number of key-parameters, must be given as UInt. Messages were changed accordingly (`TTT2SESaveItem`,`TTT2SyncDBItems`)
 
 
 ## [v0.8.2b](https://github.com/TTT-2/TTT2/tree/v0.8.2b) (2021-03-25)
